@@ -23,7 +23,7 @@
             console.log(data);
             console.log(response);
             for (alert in data) {
-                results += `<div> <p> ${alert['descr']} </p> <p> ${alert['lat']}, ${alert['lon']} </p> <p> ${alert['time_created']} </p> </div>`
+                results.html += `<div> <p> ${alert['descr']} </p> <p> ${alert['lat']}, ${alert['lon']} </p> <p> ${alert['time_created']} </p> </div>`
             }
         });
     } );

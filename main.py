@@ -1,4 +1,5 @@
-from fastapi import FastAPI, Form
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
 from datetime import datetime
@@ -8,6 +9,23 @@ from utils import Alert, Coords, sort_by_time
 
 
 app = FastAPI()
+
+origins = [
+    "http://math4l-1.aeternus007.repl.co",
+    "https://math4l-1.aeternus007.repl.co",
+    "http://lifesafer.netlify.app/view",
+    "https://lifesafer.netlify.app/view",
+    "http://0.0.0.0:80",
+    "https://0.0.0.0:80",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.post("/create")
 def create(alert : Alert):
@@ -35,4 +53,4 @@ def view(): # lon : float, lat : float
     return sorted(alerts, key=sort_by_time, reverse=True) # was lambda x: pythagoras_sort({"lon" : lon, "lat" : lat}, x)
 
 
-uvicorn.run(app,host="0.0.0.0",port="8080")
+uvicorn.run(app, host="0.0.0.0", port="80")
