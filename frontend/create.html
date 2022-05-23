@@ -16,7 +16,7 @@
         <button id="send">Create Alert!</button>
     </form>
     <script>
-        $.ready(function {
+        $.ready(function () {
             $(#send).click(function (event) {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function (location) {
