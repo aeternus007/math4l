@@ -17,7 +17,7 @@
     </form>
     <script>
         $.ready(function () {
-            $(#send).click(function (event) {
+            $("#send").click(function (event) {
                 if (navigator.geolocation) {
                     navigator.geolocation.getCurrentPosition(function (location) {
                         var lat = position.coords.latitude;
