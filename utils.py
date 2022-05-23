@@ -4,7 +4,7 @@ from datetime import datetime
 from math import sqrt
 
 class Alert(BaseModel):
-    description : str
+    descr : str
     lat : float
     lon : float
 

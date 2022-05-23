@@ -14,7 +14,7 @@ def create(alert : Alert):
     with open("alerts.json", "r") as f:
         alerts = json.load(f)
 
-    descr = alert.description
+    descr = alert.descr
     lat = alert.lat
     lon = alert.lon
     time_created = str(datetime.now()).split(".")[0]
