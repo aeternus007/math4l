@@ -27,8 +27,8 @@ def create(alert : Alert):
     return {"success" : True}
 
 
-@app.get("/view/{lon}/{lat}")
-def view(lon : float, lat : float):
+@app.get("/view") # /{lon}/{lat}
+def view(): # lon : float, lat : float
     with open("alerts.json", "r") as f:
         alerts = json.load(f)
 

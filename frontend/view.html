@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+  integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+  crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alerts</h1>
+    <div id="results">
+        
+    </div>
+
+<script>
+    $( function {
+        var results = $("#results")
+        $.get("https://math4l-1.aeternus007.repl.co/view", function (data, response) {
+            console.log(data);
+            console.log(response);
+            for (alert in data) {
+                results += `<div> <p> ${alert['descr']} </p> <p> ${alert['lat']}, ${alert['lon']} </p> <p> ${alert['time_created']} </p> </div>`
+            }
+        });
+    } );
+</script>
+
+</body>
+</html>
