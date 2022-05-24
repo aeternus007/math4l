@@ -55,4 +55,6 @@ def view(): # lon : float, lat : float
     return sorted(alerts, key=sort_by_time, reverse=True) # was lambda x: pythagoras_sort({"lon" : lon, "lat" : lat}, x)
 
 
+
+
 uvicorn.run(app, host="0.0.0.0", port="80")
