@@ -40,6 +40,10 @@ def create(alert : Alert):
     time_created = str(datetime.now()).split(".")[0]
 
     alerts.append({"descr" : descr, "lat" : lat, "lon" : lon, "time_created" : time_created})
+
+    details = {"descr" : descr, "lat" : lat, "lon" : lon, "time_created" : time_created}
+
+    print(details)
     
     with open("alerts.json", "w") as f:
         json.dump(alerts, f, indent=4)
