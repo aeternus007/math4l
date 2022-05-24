@@ -15,6 +15,8 @@ origins = [
     "https://math4l-1.aeternus007.repl.co",
     "http://lifesafer.netlify.app/view",
     "https://lifesafer.netlify.app/view",
+    "http://lifesafer.netlify.app/create",
+    "https://lifesafer.netlify.app/create",
     "http://0.0.0.0:80",
     "https://0.0.0.0:80",
 ]
