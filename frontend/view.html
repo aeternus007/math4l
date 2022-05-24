@@ -21,7 +21,7 @@
         var results = $("#results")
         $.get("https://math4l-1.aeternus007.repl.co/view", function (data, response) {
             console.log(data);
-            for alert in data.slice(0, -1) {
+            for (alert in data.slice(0, -1)) {
                 results += `<div> <p> ${alert['descr']} </p> <p> ${alert['lat']}, ${alert['lon']} </p> <p> ${alert['time_created']} </p> </div>`;
             }
         });
