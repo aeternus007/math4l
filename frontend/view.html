@@ -23,7 +23,7 @@
             console.log(data);
             for (alert in data.slice(0, -1)) {
                 console.log(alert)
-                results.append(`<div> <p> ${alert.descr} </p> <p> ${alert.lat}, ${alert.lon} </p> <p> ${alert.time_created} </p> </div>`);
+                results.append(`<div> <p> ${data[alert].descr} </p> <p> ${data[alert].lat}, ${data[alert].lon} </p> <p> ${data[alert].time_created} </p> </div>`);
             }
         });
     } );
