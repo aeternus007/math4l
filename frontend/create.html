@@ -26,7 +26,7 @@
                         var descr = $("#descr").val();
                         
                         var alert_data = {"lon" : lon, "lat" : lat, "descr" : descr}
-                        $.post("https://math4l-1.aeternus007.repl.co/create", alert_data, function (data) {
+                        $.post("http://math4l-1.aeternus007.repl.co/create", alert_data, function (data) {
                             console.log(data);
                         });
                     });
