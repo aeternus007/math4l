@@ -21,12 +21,12 @@
         var results = $("#results")
         $.get("https://math4l-1.aeternus007.repl.co/view", function (data, response) {
             console.log(data);
-            for (alert in data.slice(0, -1)) {
+            for (alert in data) {
                 console.log(alert)
                 results.append(`<div> <p> ${data[alert].descr} </p> <p> ${data[alert].lat}, ${data[alert].lon} </p> <p> ${data[alert].time_created} </p> </div>`);
             }
         });
-    } );
+    });
 </script>
 
 </body>
