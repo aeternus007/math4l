@@ -26,11 +26,11 @@
                         var descr = $("#descr").val();
                         
                         var alert_data = {"lon" : lon, "lat" : lat, "descr" : descr}
-                        $.post("http://math4l-1.aeternus007.repl.co/create", alert_data, function (data) {
-                            console.log(data);
-                            // console.log(response);
+                        $.post("http://math4l-1.aeternus007.repl.co/create", alert_data) // , function (data) {
+                        //     console.log(data);
+                        //     // console.log(response);
                             
-                        }); // changed https to http
+                        // }); // changed https to http
                     });
                 }
             });

@@ -1,32 +1,3 @@
 [
-    {
-        "descr": "robery",
-        "lat": 13.233,
-        "lon": 4.0,
-        "time_created": "2022-05-23 06:59:09"
-    },
-    {
-        "descr": "fire",
-        "lat": 13.233,
-        "lon": 4.0,
-        "time_created": "2022-05-23 06:59:36"
-    },
-    {
-        "descr": "fire",
-        "lat": 0.0,
-        "lon": 4.0,
-        "time_created": "2022-05-23 07:00:04"
-    },
-    {
-        "descr": "car accident",
-        "lat": 35.05,
-        "lon": 20.0,
-        "time_created": "2022-05-23 07:01:21"
-    },
-    {
-        "descr": "test",
-        "lat": 0.0,
-        "lon": 0.0,
-        "time_created": "2022-05-24 11:20:54"
-    }
+    
 ]
